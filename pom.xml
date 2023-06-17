@@ -129,7 +129,18 @@
       <url>git:ssh://git@github.com/mybatis/mybatis-3.git?gh-pages#</url>
     </site>
   </distributionManagement>
-
+  <repositories>
+    <repository>
+      <id>central </id>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
   <properties>
     <clirr.comparisonVersion>3.4.6</clirr.comparisonVersion>
 
@@ -321,7 +332,8 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.4.8</version>
+     <!-- <version>1.4.8</version>-->
+      <version>1.4.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>
